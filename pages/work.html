@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StrasbourgStarter</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5F62L810BJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5F62L810BJ');
+  </script>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../favicon.svg" alt="" style="height:26px;width:26px;border-radius:5px;">
+      Strasbourg<span>Starter</span>
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="housing.html">Housing</a></li>
+      <li><a href="admin-banking.html">Admin &amp; Banking</a></li>
+      <li><a href="daily-life.html">Daily Life</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="neighbourhoods.html">Neighbourhoods</a></li>
+      <li><a href="community.html">Community</a></li>
+    </ul>
+  </div>
+  <div class="nav-drawer" id="drawer">
+    <a href="../index.html">Home</a>
+    <a href="housing.html">Housing</a>
+    <a href="admin-banking.html">Admin &amp; Banking</a>
+    <a href="daily-life.html">Daily Life</a>
+    <a href="work.html">Work</a>
+    <a href="neighbourhoods.html">Neighbourhoods</a>
+    <a href="community.html">Community</a>
+  </div>
+</nav>
+<header class="category-header">
+  <div class="container" style="padding-top:0;padding-bottom:0;">
+    <p class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; This section</p>
+    <h1>Coming soon</h1>
+    <p>Guides for this section are being written. Check back soon!</p>
+  </div>
+</header>
+<main class="container">
+  <h2 class="section-title">Articles in progress</h2>
+  <p class="section-sub">This section is actively being built. More guides will appear here shortly.</p>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="footer-logo">
+        <img src="../favicon.svg" alt="" style="height:26px;width:26px;border-radius:5px;margin-right:8px;">
+        Strasbourg<span>Starter</span>
+      </a>
+      <p class="footer-tagline">A practical guide to living and working in Strasbourg &mdash; written by someone who figured it out the hard way.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Guides</p>
+      <a href="../pages/housing.html">Housing</a>
+      <a href="../pages/admin-banking.html">Admin &amp; Banking</a>
+      <a href="../pages/daily-life.html">Daily Life</a>
+      <a href="../pages/work.html">Work &amp; Institutions</a>
+      <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+      <a href="../pages/community.html">Community</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Quick links</p>
+      <a href="../pages/admin-banking.html#sim">Get a French SIM card</a>
+      <a href="../pages/admin-banking.html#nickel">Open a bank account</a>
+      <a href="../pages/housing.html#guarantor">Find a guarantor</a>
+      <a href="../pages/housing.html#caf">Apply for CAF</a>
+      <a href="../pages/daily-life.html#kehl">Shopping in Kehl</a>
+      <a href="../pages/daily-life.html#events">Yearly events</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 StrasbourgStarter.com &mdash; Made for internationals, by someone who went through it all.</p>
+    <p>Not affiliated with any government or institution. All guides reflect personal experience.</p>
+  </div>
+</footer>
+<script>
+  var btn = document.getElementById("hamburger");
+  var drawer = document.getElementById("drawer");
+  btn.addEventListener("click", function() {
+    btn.classList.toggle("open");
+    drawer.classList.toggle("open");
+  });
+  document.addEventListener("click", function(e) {
+    if (!btn.contains(e.target) && !drawer.contains(e.target)) {
+      btn.classList.remove("open");
+      drawer.classList.remove("open");
+    }
+  });
+</script>
+</body>
+</html>
