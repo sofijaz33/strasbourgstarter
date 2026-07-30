@@ -147,36 +147,40 @@ nav {
 .hero {
   background: var(--warm-white);
   border-bottom: 1px solid var(--border);
-  padding: 5rem 2rem 4rem;
+  padding: 3rem 2rem 2.5rem;
   text-align: center;
 }
 
 .hero-eyebrow {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--terracotta);
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
   color: var(--charcoal);
-  max-width: 640px;
-  margin: 0 auto 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 1rem;
 }
 
-.hero h1 em { font-style: italic; color: var(--terracotta); }
+.hero h1 em {
+  font-style: italic;
+  color: var(--terracotta);
+  font-family: var(--font-display);
+}
 
 .hero p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--muted);
-  max-width: 520px;
-  margin: 0 auto 2rem;
+  max-width: 480px;
+  margin: 0 auto 1.5rem;
   font-weight: 300;
 }
 
