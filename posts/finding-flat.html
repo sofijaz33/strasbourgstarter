@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to open a bank account in France as a foreigner — StrasbourgStarter</title>
+  <meta name="description" content="Which banks are foreigner-friendly, what documents you need, and how long it actually takes." />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../favicon.svg" alt="" style="height:26px;width:26px;border-radius:5px;">
+      Strasbourg<span>Starter</span>
+    </a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/housing.html">Housing</a></li>
+      <li><a href="../pages/admin-banking.html">Admin &amp; Banking</a></li>
+      <li><a href="../pages/daily-life.html">Daily Life</a></li>
+      <li><a href="../pages/work.html">Work</a></li>
+      <li><a href="../pages/neighbourhoods.html">Neighbourhoods</a></li>
+      <li><a href="../pages/community.html">Community</a></li>
+    </ul>
+  </div>
+  <div class="nav-drawer" id="drawer">
+    <a href="../index.html">Home</a>
+    <a href="../pages/housing.html">Housing</a>
+    <a href="../pages/admin-banking.html">Admin &amp; Banking</a>
+    <a href="../pages/daily-life.html">Daily Life</a>
+    <a href="../pages/work.html">Work</a>
+    <a href="../pages/neighbourhoods.html">Neighbourhoods</a>
+    <a href="../pages/community.html">Community</a>
+  </div>
+</nav>
+
+<header class="article-header">
+  <span class="post-tag">Admin & Banking</span>
+  <h1>How to open a bank account in France as a foreigner</h1>
+  <p class="article-meta">June 2025 · 6 min read</p>
+</header>
+
+<article class="article-body">
+
+  <p>Opening a bank account is one of the first things you need to do when you arrive in Strasbourg — you'll need it for your rental contract, your employer, and to receive CAF housing benefits. The good news: it's very doable, even without a French social security number yet.</p>
+
+  <h2>Which bank should you choose?</h2>
+
+  <p>Not all French banks are equally welcoming to newly arrived foreigners. Here are the most practical options:</p>
+
+  <ul>
+    <li><strong>Boursorama / Hello Bank / Fortuneo</strong> — Online banks, fast to open, very foreigner-friendly. No fees. Best choice if you can wait a week for the card.</li>
+    <li><strong>La Banque Postale</strong> — Available at any post office, legally required to open an account for anyone legally residing in France (this is called the <em>droit au compte</em>). Slower but a guaranteed fallback.</li>
+    <li><strong>BNP Paribas / Société Générale / Crédit Mutuel</strong> — Traditional banks. Usually require more documents and an appointment, but offer in-person support which can be helpful.</li>
+  </ul>
+
+  <div class="tip-box">
+    💡 <strong>Tip:</strong> If you're in a hurry, open an online account first (Boursorama takes about 5–7 days), then open a traditional account later if needed for your employer.
+  </div>
+
+  <h2>Documents you'll need</h2>
+
+  <p>Requirements vary slightly between banks, but most will ask for:</p>
+
+  <ul>
+    <li>Valid passport or EU ID card</li>
+    <li>Proof of address in France (a rental contract, EDF bill, or even an attestation from your host)</li>
+    <li>Proof of income or employment (work contract, payslip, or student enrollment certificate)</li>
+    <li>Your visa or residence permit if you're a non-EU citizen</li>
+  </ul>
+
+  <p>If you've just arrived and don't have a French address yet, ask your employer or university for a <em>attestation d'hébergement</em> — a letter confirming you are staying at their address. Banks usually accept this for the first few weeks.</p>
+
+  <h2>What if a bank refuses you?</h2>
+
+  <p>Under French law, every resident has the right to a basic bank account. If a bank refuses, you can invoke the <em>droit au compte</em> procedure: go to any La Banque Postale branch, explain the situation, and they are legally obliged to open an account for you within 3 business days.</p>
+
+  <h2>How long does it take?</h2>
+
+  <ul>
+    <li>Online banks: 5–10 days to receive your card by post</li>
+    <li>Traditional banks: appointment in 1–2 weeks, card arrives 2 weeks after that</li>
+    <li>La Banque Postale (droit au compte): 3 business days to activate the account</li>
+  </ul>
+
+  <div class="tip-box">
+    💡 <strong>Tip:</strong> Ask your employer if they can delay your first salary payment by a week — most HR departments in Strasbourg's international organisations are used to this situation.
+  </div>
+
+  <h2>What about Wise or Revolut?</h2>
+
+  <p>Many newcomers use Wise or Revolut as a temporary solution while waiting for a French bank account. They work well for day-to-day spending, but French employers often won't accept them for salary payments, and CAF requires a proper French IBAN. Use them as a bridge, not a long-term solution.</p>
+
+</article>
+
+<footer>
+  <p>© 2025 StrasbourgStarter.com — Made for internationals, by someone who went through it all.</p>
+  <p style="margin-top:0.5rem"><a href="../index.html">Home</a> · <a href="../pages/admin-banking.html">Admin & Banking</a></p>
+</footer>
+
+<script>
+  var btn = document.getElementById("hamburger");
+  var drawer = document.getElementById("drawer");
+  btn.addEventListener("click", function() {
+    btn.classList.toggle("open");
+    drawer.classList.toggle("open");
+  });
+  document.addEventListener("click", function(e) {
+    if (!btn.contains(e.target) && !drawer.contains(e.target)) {
+      btn.classList.remove("open");
+      drawer.classList.remove("open");
+    }
+  });
+</script>
+</body>
+</html>
