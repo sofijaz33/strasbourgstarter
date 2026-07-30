@@ -232,7 +232,7 @@ nav {
 /* ── CATEGORY GRID ── */
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-bottom: 3.5rem;
 }
@@ -383,9 +383,18 @@ nav {
 
 /* ── GUIDE / CATEGORY PAGE ── */
 .guide-intro {
-  background: var(--warm-white);
+  background: linear-gradient(135deg, #FAF0E8 0%, #F5E8D8 50%, #EDE0CE 100%);
   border-bottom: 1px solid var(--border);
   padding: 3.5rem 2rem 2.5rem;
+  position: relative;
+}
+
+.guide-intro::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--terracotta) 0%, var(--terracotta-light) 100%);
 }
 
 .guide-intro-inner { max-width: 780px; margin: 0 auto; }
@@ -801,25 +810,12 @@ footer {
   color: var(--terracotta);
 }
 
-/* ── GUIDE PAGE HERO BACKGROUNDS ── */
-.guide-intro {
-  background: linear-gradient(135deg, #FAF0E8 0%, #F5E8D8 50%, #EDE0CE 100%);
-  border-bottom: 1px solid var(--border);
-  padding: 3.5rem 2rem 2.5rem;
-  position: relative;
-}
 
-.guide-intro::after {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--terracotta) 0%, var(--terracotta-light) 100%);
-}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
@@ -827,3 +823,14 @@ footer {
   .guide-row-arrow { display: none; }
   .quote-band p { font-size: 0.9rem; }
 }
+
+.nav-search-btn {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+}
+.nav-search-btn:hover { background: var(--sand); }
