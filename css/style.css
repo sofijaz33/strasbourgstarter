@@ -344,6 +344,8 @@ nav {
 }
 
 .article-header .article-meta { font-size: 0.82rem; color: var(--muted); }
+.article-header .article-byline { font-size: 0.82rem; color: var(--muted); margin-top: 0.25rem; }
+.article-header .article-byline strong { color: var(--ink); font-weight: 600; }
 
 .article-body {
   max-width: 700px;
