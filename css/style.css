@@ -847,3 +847,46 @@ footer {
   background: #EADDD0 !important;
   color: var(--terracotta-dark) !important;
 }
+
+/* ── BLOG TEASER (HOMEPAGE) ── */
+.blog-teaser {
+  background: linear-gradient(135deg, #FFF4EC 0%, #FAF0E8 55%, #F5EDE6 100%);
+  border: 1px solid var(--terracotta-light);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.blog-teaser-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--terracotta);
+  background: var(--warm-white);
+  border: 1px solid var(--terracotta-light);
+  border-radius: 20px;
+  padding: 0.3rem 0.85rem;
+  margin-bottom: 0.9rem;
+}
+
+.blog-teaser .section-title { margin-top: 0; }
+
+/* Own grid (not .posts-grid) so a single early post doesn't stretch full-width;
+   as more posts are added they simply wrap onto new rows. */
+.blog-posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.blog-posts-grid .post-card {
+  flex: 1 1 300px;
+  max-width: 380px;
+}
+
+@media (max-width: 600px) {
+  .blog-teaser { padding: 1.75rem 1.25rem; border-radius: 12px; }
+  .blog-posts-grid .post-card { max-width: 100%; }
+}
